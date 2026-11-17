@@ -22,7 +22,7 @@ import { WithRegardsSection } from "@/components/WithRegardsSection";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Abu Talha & Dr. Fareha Noor — Dawat-e-Walima | 3 Jan 2027" },
+      { title: "Abu Talha & Dr. Fareha Noor — Dawat-e-Walima" },
       {
         name: "description",
         content:
@@ -30,7 +30,7 @@ export const Route = createFileRoute("/")({
       },
       {
         property: "og:title",
-        content: "Abu Talha & Dr. Fareha Noor — Dawat-e-Walima | 3 Jan 2027",
+        content: "Abu Talha & Dr. Fareha Noor — Dawat-e-Walima",
       },
       {
         property: "og:description",
@@ -38,7 +38,21 @@ export const Route = createFileRoute("/")({
           "You are cordially invited to celebrate the Dawat-e-Walima of Abu Talha and Dr. Fareha Noor on Sunday, 3 January 2027 at Firayalal Banquets, Ranchi.",
       },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://abu-fareha.inviteby.top/" },
+      { property: "og:image", content: "https://abu-fareha.inviteby.top/og-image.jpg" },
+      { property: "og:image:secure_url", content: "https://abu-fareha.inviteby.top/og-image.jpg" },
+      { property: "og:image:type", content: "image/jpeg" },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      { property: "og:image:alt", content: "Abu Talha & Dr. Fareha Noor — Dawat-e-Walima" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Abu Talha & Dr. Fareha Noor — Dawat-e-Walima" },
+      {
+        name: "twitter:description",
+        content:
+          "You are cordially invited to celebrate the Dawat-e-Walima of Abu Talha and Dr. Fareha Noor on Sunday, 3 January 2027 at Firayalal Banquets, Ranchi.",
+      },
+      { name: "twitter:image", content: "https://abu-fareha.inviteby.top/og-image.jpg" },
     ],
   }),
   component: Invitation,
@@ -593,21 +607,6 @@ function Footer() {
         </Reveal>
 
         <div className="gold-rule mx-auto mt-10 w-24" />
-
-        <p className="mt-6 inline-flex items-center gap-1.5 text-[0.62rem] uppercase tracking-[0.3em] text-cream/40">
-          Crafted with <Heart className="h-3 w-3 fill-rose text-rose" /> with prayers for our families
-        </p>
-
-        <div>
-          <a
-            href="https://www.instagram.com/invitestory.in/"
-            target="_blank"
-            rel="noreferrer"
-            className="mt-3 inline-block text-[0.62rem] uppercase tracking-[0.35em] text-gold-soft/80 transition-colors hover:text-gold"
-          >
-            Follow @invitestory.in on Instagram
-          </a>
-        </div>
       </div>
     </footer>
   );
