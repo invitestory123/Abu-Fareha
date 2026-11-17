@@ -6,10 +6,12 @@ const FAMILY_NAMES = [
   "Naqushain",
   "Sidra",
   "Salman",
+  "Chahat",
   "Safa",
   "Fatima",
-  "Atifa",
   "Abdullah",
+  "Sharina",
+  "Atifa",
   "Ahmed",
   "Hamna",
   "Abdurrahman",
@@ -49,10 +51,10 @@ export function WithRegardsSection() {
           <div className="mx-auto mt-2 h-[1px] w-20 bg-gradient-to-r from-transparent via-[#e5c178] to-transparent" />
         </div>
 
-        {/* Emotional Quote */}
+        {/* Emotional Quote (with 'dance' removed as requested) */}
         <div className="relative z-10 mt-8 px-2 sm:px-4">
           <p className="font-display text-base sm:text-lg italic leading-relaxed text-[#f4eedb] drop-shadow-md">
-            “Your presence is the blessing we wish for most. Come dine with us, dance with us, and let us begin forever surrounded by the people we love.”
+            “Your presence is the blessing we wish for most. Come dine with us, and let us begin forever surrounded by the people we love.”
           </p>
         </div>
 
@@ -63,8 +65,16 @@ export function WithRegardsSection() {
           <div className="h-[1px] w-12 bg-gradient-to-r from-transparent via-[#e5c178]/50 to-transparent" />
         </div>
 
-        {/* Names List */}
-        <div className="relative z-10 px-2 sm:px-4">
+        {/* Names List with HAMZA placed above */}
+        <div className="relative z-10 px-2 sm:px-4 max-w-md mx-auto">
+          {/* HAMZA featured above */}
+          <div className="mb-3">
+            <span className="font-display text-sm sm:text-base font-bold uppercase tracking-[0.35em] text-[#ffd983] drop-shadow-[0_1px_8px_rgba(255,217,131,0.4)]">
+              HAMZA
+            </span>
+          </div>
+
+          {/* SARA and other family names */}
           <div className="flex flex-wrap items-center justify-center gap-x-2.5 gap-y-1.5 text-xs sm:text-sm uppercase tracking-[0.25em] font-medium text-[#fdfaf2]/90">
             {FAMILY_NAMES.map((name, i) => (
               <span key={name} className="inline-flex items-center">
@@ -77,8 +87,18 @@ export function WithRegardsSection() {
           </div>
         </div>
 
+        {/* RSVP Section */}
+        <div className="relative z-10 mt-8 pt-5 border-t border-[#c5a059]/30">
+          <p className="font-display text-[0.68rem] uppercase tracking-[0.35em] font-semibold text-[#e5c178]">
+            R.S.V.P.
+          </p>
+          <p className="mt-1 font-display text-sm sm:text-base font-semibold text-[#fdfaf2]">
+            Md. Ainul Haque Khan &amp; Md. Aurangzeb Khan
+          </p>
+        </div>
+
         {/* Couple Names Sign-off */}
-        <div className="relative z-10 mt-10">
+        <div className="relative z-10 mt-8">
           <p className="font-script text-4xl sm:text-5xl text-[#ffd782] drop-shadow-[0_2px_12px_rgba(255,215,130,0.35)]">
             Fareha &amp; Abu Talha
           </p>
@@ -87,7 +107,7 @@ export function WithRegardsSection() {
           </p>
         </div>
 
-        {/* Lotus Floral Illustration at Bottom (matching Image 1) */}
+        {/* Lotus Floral Illustration at Bottom (matching reference image) */}
         <div className="relative z-10 mt-8 -mx-6 -mb-6 sm:-mx-10 sm:-mb-10 overflow-hidden pt-4 pointer-events-none">
           <svg
             viewBox="0 0 500 130"

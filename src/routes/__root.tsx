@@ -77,16 +77,16 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Abu Talha & Dr. Fareha Noor — Wedding Celebration | 3 Jan 2027" },
-      { name: "description", content: "You are cordially invited to celebrate the wedding ceremony of Abu Talha and Dr. Fareha Noor on Sunday, 3 January 2027 at Firayalal Banquets, Ranchi." },
+      { title: "Abu Talha & Dr. Fareha Noor — Dawat-e-Walima | 3 Jan 2027" },
+      { name: "description", content: "You are cordially invited to celebrate the Dawat-e-Walima of Abu Talha and Dr. Fareha Noor on Sunday, 3 January 2027 at Firayalal Banquets, Ranchi." },
       { name: "author", content: "InviteStory" },
-      { property: "og:title", content: "Abu Talha & Dr. Fareha Noor — Wedding Celebration | 3 Jan 2027" },
-      { property: "og:description", content: "You are cordially invited to celebrate the wedding ceremony of Abu Talha and Dr. Fareha Noor on Sunday, 3 January 2027 at Firayalal Banquets, Ranchi." },
+      { property: "og:title", content: "Abu Talha & Dr. Fareha Noor — Dawat-e-Walima | 3 Jan 2027" },
+      { property: "og:description", content: "You are cordially invited to celebrate the Dawat-e-Walima of Abu Talha and Dr. Fareha Noor on Sunday, 3 January 2027 at Firayalal Banquets, Ranchi." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@invitestory.in" },
-      { name: "twitter:title", content: "Abu Talha & Dr. Fareha Noor — Wedding Celebration | 3 Jan 2027" },
-      { name: "twitter:description", content: "You are cordially invited to celebrate the wedding ceremony of Abu Talha and Dr. Fareha Noor on Sunday, 3 January 2027 at Firayalal Banquets, Ranchi." },
+      { name: "twitter:title", content: "Abu Talha & Dr. Fareha Noor — Dawat-e-Walima | 3 Jan 2027" },
+      { name: "twitter:description", content: "You are cordially invited to celebrate the Dawat-e-Walima of Abu Talha and Dr. Fareha Noor on Sunday, 3 January 2027 at Firayalal Banquets, Ranchi." },
 
     ],
     links: [

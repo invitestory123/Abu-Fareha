@@ -22,20 +22,20 @@ import { WithRegardsSection } from "@/components/WithRegardsSection";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Abu Talha & Dr. Fareha Noor — Wedding Celebration | 3 Jan 2027" },
+      { title: "Abu Talha & Dr. Fareha Noor — Dawat-e-Walima | 3 Jan 2027" },
       {
         name: "description",
         content:
-          "You are cordially invited to celebrate the wedding ceremony of Abu Talha and Dr. Fareha Noor on Sunday, 3 January 2027 at Firayalal Banquets, Ranchi.",
+          "You are cordially invited to celebrate the Dawat-e-Walima of Abu Talha and Dr. Fareha Noor on Sunday, 3 January 2027 at Firayalal Banquets, Ranchi.",
       },
       {
         property: "og:title",
-        content: "Abu Talha & Dr. Fareha Noor — Wedding Celebration | 3 Jan 2027",
+        content: "Abu Talha & Dr. Fareha Noor — Dawat-e-Walima | 3 Jan 2027",
       },
       {
         property: "og:description",
         content:
-          "You are cordially invited to celebrate the wedding ceremony of Abu Talha and Dr. Fareha Noor on Sunday, 3 January 2027 at Firayalal Banquets, Ranchi.",
+          "You are cordially invited to celebrate the Dawat-e-Walima of Abu Talha and Dr. Fareha Noor on Sunday, 3 January 2027 at Firayalal Banquets, Ranchi.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -84,11 +84,11 @@ function icsHref() {
     "BEGIN:VCALENDAR",
     "VERSION:2.0",
     "BEGIN:VEVENT",
-    "SUMMARY:Wedding Celebration of Abu Talha & Dr. Fareha Noor",
+    "SUMMARY:Dawat-e-Walima of Abu Talha & Dr. Fareha Noor",
     `DTSTART:${fmt(WEDDING_DATE)}`,
     `DTEND:${fmt(end)}`,
     `LOCATION:${VENUE_ADDRESS}`,
-    "DESCRIPTION:With joyous hearts, the Khan & Sarwar families invite you to the wedding celebration of Abu Talha & Dr. Fareha Noor at Firayalal Banquets, Ranchi.",
+    "DESCRIPTION:With joyous hearts, the Khan & Sarwar families invite you to the Dawat-e-Walima of Abu Talha & Dr. Fareha Noor at Firayalal Banquets, Ranchi.",
     "END:VEVENT",
     "END:VCALENDAR",
   ].join("\r\n");
@@ -254,10 +254,20 @@ function Hero() {
               {/* Formal Invitation Text */}
               <div className="mt-6 pt-5 border-t border-[#c49a45]/30">
                 <p className="font-display text-xs sm:text-sm uppercase tracking-[0.25em] font-semibold text-[#1a382d]/90">
-                  Cordially invite you to celebrate their
+                  Cordially invite you to celebrate the
                 </p>
-                <p className="mt-1 font-display text-lg sm:text-xl font-bold italic text-[#8c6721]">
-                  Nikah Ceremony &amp; Royal Wedding Reception
+                <p className="mt-1 font-display text-2xl sm:text-3xl font-bold italic text-[#8c6721]">
+                  Dawat-e-Walima
+                </p>
+              </div>
+
+              {/* RSVP */}
+              <div className="mt-5 pt-4 border-t border-[#c49a45]/30">
+                <p className="font-display text-[0.68rem] uppercase tracking-[0.35em] font-semibold text-[#8c6721]">
+                  R.S.V.P.
+                </p>
+                <p className="mt-1 font-display text-sm sm:text-base font-bold text-[#1a382d]">
+                  Md. Ainul Haque Khan &amp; Md. Aurangzeb Khan
                 </p>
               </div>
             </div>
@@ -431,7 +441,7 @@ function Details() {
       <Reveal delay={0.1} className="mt-10">
         <div className="glass-tile p-7 sm:p-9 text-center relative overflow-hidden border border-gold/40">
           <span className="gold-badge px-4 py-1 text-[0.65rem] uppercase tracking-[0.35em] font-semibold text-gold-bright">
-            Wedding Celebration &amp; Banquet
+            Dawat-e-Walima
           </span>
 
           <p className="mt-5 font-display text-3xl sm:text-4xl font-semibold text-cream">
@@ -483,6 +493,15 @@ function Details() {
                 </>
               )}
             </motion.button>
+          </div>
+
+          <div className="mt-7 pt-5 border-t border-gold/30 text-center">
+            <p className="text-[0.65rem] uppercase tracking-[0.35em] font-semibold text-gold">
+              R.S.V.P.
+            </p>
+            <p className="mt-1 font-display text-sm sm:text-base font-semibold text-cream">
+              Md. Ainul Haque Khan &amp; Md. Aurangzeb Khan
+            </p>
           </div>
         </div>
       </Reveal>
